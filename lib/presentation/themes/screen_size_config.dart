@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-final double designScreenHeight = 844.0;
-final double designScreenWidth = 390.0;
+const double designScreenHeight = 844.0;
+const double designScreenWidth = 390.0;
 
 ///
 /// return current screen's height, width and orientation
@@ -21,28 +21,28 @@ class ScreenConfig {
 
 ///
 /// return screen's height percentage
-double getScreenHeightPercentage(double percentageValue) {
+double getScreenHeightPercentage(int percentageValue) {
   double screenHeight = ScreenConfig.screenHeight;
   return (percentageValue / 100) * screenHeight;
 }
 
 ///
 /// return screen's with percentage
-double getScreenWidthPercentage(double percentageValue) {
+double getScreenWidthPercentage(int percentageValue) {
   double screenWidth = ScreenConfig.screenWidth;
   return (percentageValue / 100) * screenWidth;
 }
 
 ///
 /// return size based on design screen height
-double getScreenPropotionalHeight(double inputHeight) {
+double getScreenPropotionalHeight(int inputHeight) {
   double screenHeight = ScreenConfig.screenHeight;
   return (inputHeight / designScreenHeight) * screenHeight;
 }
 
 ///
 /// return size based on design screen width
-double getScreenPropotionalWidth(double inputWidth) {
+double getScreenPropotionalWidth(int inputWidth) {
   double screenWidth = ScreenConfig.screenWidth;
   return (inputWidth / designScreenWidth) * screenWidth;
 }

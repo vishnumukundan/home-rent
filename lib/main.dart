@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:home_rent/presentation/pages/home/view/home.dart';
+import 'package:home_rent/presentation/themes/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'Raleway',
       ),
-      home: ScreenHome(),
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData.dark(),
+      home: const ScreenHome(),
     );
   }
 }

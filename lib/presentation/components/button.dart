@@ -109,143 +109,143 @@ class ButtonStyle extends StatelessWidget {
 ///
 //////  Primary Large Button
 ///
-class Primary__Button__Large extends StatelessWidget {
-  const Primary__Button__Large({
-    Key? key,
-    required this.text,
-    this.leftIcon,
-    this.rightIcon,
-    required this.leftIconVisibility,
-    required this.rightIconVisibility,
-    required this.onTap,
-  }) : super(key: key);
+// class Primary__Button__Large extends StatelessWidget {
+//   const Primary__Button__Large({
+//     Key? key,
+//     required this.text,
+//     this.leftIcon,
+//     this.rightIcon,
+//     required this.leftIconVisibility,
+//     required this.rightIconVisibility,
+//     required this.onTap,
+//   }) : super(key: key);
 
-  final text;
-  final onTap;
-  final IconData? leftIcon;
-  final IconData? rightIcon;
-  final bool leftIconVisibility;
-  final bool rightIconVisibility;
+//   final text;
+//   final onTap;
+//   final IconData? leftIcon;
+//   final IconData? rightIcon;
+//   final bool leftIconVisibility;
+//   final bool rightIconVisibility;
 
-  @override
-  Widget build(BuildContext context) {
-    return ButtonStyle(
-      text: text,
-      onTap: onTap,
-      textColor: kButtonPrimaryTextColor,
-      backgroundColor: kButtonPrimaryColor,
-      paddingLeft:
-          leftIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
-      paddingRight:
-          rightIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
-      leftIcon: leftIcon,
-      rightIcon: rightIcon,
-      leftIconVisibility: leftIconVisibility,
-      rightIconVisibility: rightIconVisibility,
-      //
-      fontWeight: kButtonLargeFontWeight,
-      iconAndTextSpace: kButtonLargeTextAndIconSpace,
-      textSize: kButtonLargeTextSize,
-      iconSize: kButtonLargeIconSize,
-      buttonHeight: kButtonLargeHeight,
-      cornerRadius: kButtonLargeCornerRadius,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ButtonStyle(
+//       text: text,
+//       onTap: onTap,
+//       textColor: kButtonPrimaryTextColor,
+//       backgroundColor: kButtonPrimaryColor,
+//       paddingLeft:
+//           leftIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
+//       paddingRight:
+//           rightIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
+//       leftIcon: leftIcon,
+//       rightIcon: rightIcon,
+//       leftIconVisibility: leftIconVisibility,
+//       rightIconVisibility: rightIconVisibility,
+//       //
+//       fontWeight: kButtonLargeFontWeight,
+//       iconAndTextSpace: kButtonLargeTextAndIconSpace,
+//       textSize: kButtonLargeTextSize,
+//       iconSize: kButtonLargeIconSize,
+//       buttonHeight: kButtonLargeHeight,
+//       cornerRadius: kButtonLargeCornerRadius,
+//     );
+//   }
+// }
 
 ///
 //////  Secondary Large Button
 ///
-class Secondary__Button__Large extends StatelessWidget {
-  const Secondary__Button__Large({
-    Key? key,
-    required this.text,
-    this.leftIcon,
-    this.rightIcon,
-    required this.leftIconVisibility,
-    required this.rightIconVisibility,
-    required this.onTap,
-  }) : super(key: key);
+// class Secondary__Button__Large extends StatelessWidget {
+//   const Secondary__Button__Large({
+//     Key? key,
+//     required this.text,
+//     this.leftIcon,
+//     this.rightIcon,
+//     required this.leftIconVisibility,
+//     required this.rightIconVisibility,
+//     required this.onTap,
+//   }) : super(key: key);
 
-  final text;
-  final onTap;
-  final IconData? leftIcon;
-  final IconData? rightIcon;
-  final bool leftIconVisibility;
-  final bool rightIconVisibility;
+//   final text;
+//   final onTap;
+//   final IconData? leftIcon;
+//   final IconData? rightIcon;
+//   final bool leftIconVisibility;
+//   final bool rightIconVisibility;
 
-  @override
-  Widget build(BuildContext context) {
-    return ButtonStyle(
-      text: text,
-      onTap: onTap,
-      textColor: kButtonSecondaryTextColor,
-      backgroundColor: kButtonSecondaryColor,
-      paddingLeft:
-          leftIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
-      paddingRight:
-          rightIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
-      leftIcon: leftIcon,
-      rightIcon: rightIcon,
-      leftIconVisibility: leftIconVisibility,
-      rightIconVisibility: rightIconVisibility,
-      //
-      fontWeight: kButtonLargeFontWeight,
-      iconAndTextSpace: kButtonLargeTextAndIconSpace,
-      textSize: kButtonLargeTextSize,
-      iconSize: kButtonLargeIconSize,
-      buttonHeight: kButtonLargeHeight,
-      cornerRadius: kButtonLargeCornerRadius,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ButtonStyle(
+//       text: text,
+//       onTap: onTap,
+//       textColor: kButtonSecondaryTextColor,
+//       backgroundColor: kButtonSecondaryColor,
+//       paddingLeft:
+//           leftIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
+//       paddingRight:
+//           rightIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
+//       leftIcon: leftIcon,
+//       rightIcon: rightIcon,
+//       leftIconVisibility: leftIconVisibility,
+//       rightIconVisibility: rightIconVisibility,
+//       //
+//       fontWeight: kButtonLargeFontWeight,
+//       iconAndTextSpace: kButtonLargeTextAndIconSpace,
+//       textSize: kButtonLargeTextSize,
+//       iconSize: kButtonLargeIconSize,
+//       buttonHeight: kButtonLargeHeight,
+//       cornerRadius: kButtonLargeCornerRadius,
+//     );
+//   }
+// }
 
 ///
 //////  Accent Large Button
 ///
-class Accent__Button__Large extends StatelessWidget {
-  const Accent__Button__Large({
-    Key? key,
-    required this.text,
-    this.leftIcon,
-    this.rightIcon,
-    required this.leftIconVisibility,
-    required this.rightIconVisibility,
-    required this.onTap,
-  }) : super(key: key);
+// class Accent__Button__Large extends StatelessWidget {
+//   const Accent__Button__Large({
+//     Key? key,
+//     required this.text,
+//     this.leftIcon,
+//     this.rightIcon,
+//     required this.leftIconVisibility,
+//     required this.rightIconVisibility,
+//     required this.onTap,
+//   }) : super(key: key);
 
-  final text;
-  final onTap;
-  final IconData? leftIcon;
-  final IconData? rightIcon;
-  final bool leftIconVisibility;
-  final bool rightIconVisibility;
+//   final text;
+//   final onTap;
+//   final IconData? leftIcon;
+//   final IconData? rightIcon;
+//   final bool leftIconVisibility;
+//   final bool rightIconVisibility;
 
-  @override
-  Widget build(BuildContext context) {
-    return ButtonStyle(
-      text: text,
-      onTap: onTap,
-      textColor: kButtonAccentTextColor,
-      backgroundColor: kButtonAccentColor,
-      paddingLeft:
-          leftIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
-      paddingRight:
-          rightIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
-      leftIcon: leftIcon,
-      rightIcon: rightIcon,
-      leftIconVisibility: leftIconVisibility,
-      rightIconVisibility: rightIconVisibility,
-      //
-      fontWeight: kButtonLargeFontWeight,
-      iconAndTextSpace: kButtonLargeTextAndIconSpace,
-      textSize: kButtonLargeTextSize,
-      iconSize: kButtonLargeIconSize,
-      buttonHeight: kButtonLargeHeight,
-      cornerRadius: kButtonLargeCornerRadius,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ButtonStyle(
+//       text: text,
+//       onTap: onTap,
+//       textColor: kButtonAccentTextColor,
+//       backgroundColor: kButtonAccentColor,
+//       paddingLeft:
+//           leftIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
+//       paddingRight:
+//           rightIconVisibility ? kButtonLargePadding : kButtonLargeBasePadding,
+//       leftIcon: leftIcon,
+//       rightIcon: rightIcon,
+//       leftIconVisibility: leftIconVisibility,
+//       rightIconVisibility: rightIconVisibility,
+//       //
+//       fontWeight: kButtonLargeFontWeight,
+//       iconAndTextSpace: kButtonLargeTextAndIconSpace,
+//       textSize: kButtonLargeTextSize,
+//       iconSize: kButtonLargeIconSize,
+//       buttonHeight: kButtonLargeHeight,
+//       cornerRadius: kButtonLargeCornerRadius,
+//     );
+//   }
+// }
 
 ////////////////////////////////////////////////////////
 //////  Medium Button Design
@@ -254,49 +254,49 @@ class Accent__Button__Large extends StatelessWidget {
 ///
 //////  Primary Medium Button
 ///
-class Primary__Button__Medium extends StatelessWidget {
-  const Primary__Button__Medium({
-    Key? key,
-    required this.text,
-    this.leftIcon,
-    this.rightIcon,
-    required this.leftIconVisibility,
-    required this.rightIconVisibility,
-    required this.onTap,
-  }) : super(key: key);
+// class Primary__Button__Medium extends StatelessWidget {
+//   const Primary__Button__Medium({
+//     Key? key,
+//     required this.text,
+//     this.leftIcon,
+//     this.rightIcon,
+//     required this.leftIconVisibility,
+//     required this.rightIconVisibility,
+//     required this.onTap,
+//   }) : super(key: key);
 
-  final text;
-  final onTap;
-  final IconData? leftIcon;
-  final IconData? rightIcon;
-  final bool leftIconVisibility;
-  final bool rightIconVisibility;
+//   final text;
+//   final onTap;
+//   final IconData? leftIcon;
+//   final IconData? rightIcon;
+//   final bool leftIconVisibility;
+//   final bool rightIconVisibility;
 
-  @override
-  Widget build(BuildContext context) {
-    return ButtonStyle(
-      text: text,
-      onTap: onTap,
-      textColor: kButtonPrimaryTextColor,
-      backgroundColor: kButtonPrimaryColor,
-      paddingLeft:
-          leftIconVisibility ? kButtonMediumPadding : kButtonMediumBasePadding,
-      paddingRight:
-          rightIconVisibility ? kButtonMediumPadding : kButtonMediumBasePadding,
-      leftIcon: leftIcon,
-      rightIcon: rightIcon,
-      leftIconVisibility: leftIconVisibility,
-      rightIconVisibility: rightIconVisibility,
-      //
-      fontWeight: kButtonMediumFontWeight,
-      iconAndTextSpace: kButtonMediumTextAndIconSpace,
-      textSize: kButtonMediumTextSize,
-      iconSize: kButtonMediumIconSize,
-      buttonHeight: kButtonMediumHeight,
-      cornerRadius: kButtonMediumCornerRadius,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ButtonStyle(
+//       text: text,
+//       onTap: onTap,
+//       textColor: kButtonPrimaryTextColor,
+//       backgroundColor: kButtonPrimaryColor,
+//       paddingLeft:
+//           leftIconVisibility ? kButtonMediumPadding : kButtonMediumBasePadding,
+//       paddingRight:
+//           rightIconVisibility ? kButtonMediumPadding : kButtonMediumBasePadding,
+//       leftIcon: leftIcon,
+//       rightIcon: rightIcon,
+//       leftIconVisibility: leftIconVisibility,
+//       rightIconVisibility: rightIconVisibility,
+//       //
+//       fontWeight: kButtonMediumFontWeight,
+//       iconAndTextSpace: kButtonMediumTextAndIconSpace,
+//       textSize: kButtonMediumTextSize,
+//       iconSize: kButtonMediumIconSize,
+//       buttonHeight: kButtonMediumHeight,
+//       cornerRadius: kButtonMediumCornerRadius,
+//     );
+//   }
+// }
 
 ///
 //////  Secondary Medium Button
@@ -399,49 +399,49 @@ class Accent__Button__Medium extends StatelessWidget {
 ///
 //////  Primary Small Button
 ///
-class Primary__Button__Small extends StatelessWidget {
-  const Primary__Button__Small({
-    Key? key,
-    required this.text,
-    this.leftIcon,
-    this.rightIcon,
-    required this.leftIconVisibility,
-    required this.rightIconVisibility,
-    required this.onTap,
-  }) : super(key: key);
+// class Primary__Button__Small extends StatelessWidget {
+//   const Primary__Button__Small({
+//     Key? key,
+//     required this.text,
+//     this.leftIcon,
+//     this.rightIcon,
+//     required this.leftIconVisibility,
+//     required this.rightIconVisibility,
+//     required this.onTap,
+//   }) : super(key: key);
 
-  final text;
-  final onTap;
-  final IconData? leftIcon;
-  final IconData? rightIcon;
-  final bool leftIconVisibility;
-  final bool rightIconVisibility;
+//   final text;
+//   final onTap;
+//   final IconData? leftIcon;
+//   final IconData? rightIcon;
+//   final bool leftIconVisibility;
+//   final bool rightIconVisibility;
 
-  @override
-  Widget build(BuildContext context) {
-    return ButtonStyle(
-      text: text,
-      onTap: onTap,
-      textColor: kButtonPrimaryTextColor,
-      backgroundColor: kButtonPrimaryColor,
-      paddingLeft:
-          leftIconVisibility ? kButtonSmallPadding : kButtonSmallBasePadding,
-      paddingRight:
-          rightIconVisibility ? kButtonSmallPadding : kButtonSmallBasePadding,
-      leftIcon: leftIcon,
-      rightIcon: rightIcon,
-      leftIconVisibility: leftIconVisibility,
-      rightIconVisibility: rightIconVisibility,
-      //
-      fontWeight: kButtonSmallFontWeight,
-      iconAndTextSpace: kButtonSmallTextAndIconSpace,
-      textSize: kButtonSmallTextSize,
-      iconSize: kButtonSmallIconSize,
-      buttonHeight: kButtonSmallHeight,
-      cornerRadius: kButtonSmallCornerRadius,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ButtonStyle(
+//       text: text,
+//       onTap: onTap,
+//       textColor: kButtonPrimaryTextColor,
+//       backgroundColor: kButtonPrimaryColor,
+//       paddingLeft:
+//           leftIconVisibility ? kButtonSmallPadding : kButtonSmallBasePadding,
+//       paddingRight:
+//           rightIconVisibility ? kButtonSmallPadding : kButtonSmallBasePadding,
+//       leftIcon: leftIcon,
+//       rightIcon: rightIcon,
+//       leftIconVisibility: leftIconVisibility,
+//       rightIconVisibility: rightIconVisibility,
+//       //
+//       fontWeight: kButtonSmallFontWeight,
+//       iconAndTextSpace: kButtonSmallTextAndIconSpace,
+//       textSize: kButtonSmallTextSize,
+//       iconSize: kButtonSmallIconSize,
+//       buttonHeight: kButtonSmallHeight,
+//       cornerRadius: kButtonSmallCornerRadius,
+//     );
+//   }
+// }
 
 ///
 //////  Secondary Small Button

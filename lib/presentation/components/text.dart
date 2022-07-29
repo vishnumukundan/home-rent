@@ -77,196 +77,196 @@ class Text__widget extends StatelessWidget {
 ///
 /// display large
 /// -----------------------------------------------------------------------------------------------
-class DisplayLarge__text extends StatelessWidget {
-  const DisplayLarge__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class DisplayLarge__text extends StatelessWidget {
+//   const DisplayLarge__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_DisplayLarge_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_DisplayLarge_LetterSpacing,
-      height: kConfig_DisplayLarge_LineHeight,
-      fontWeight: fontWeight ?? kConfig_DisplayLarge_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_DisplayLarge_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_DisplayLarge_LetterSpacing,
+//       height: kConfig_DisplayLarge_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_DisplayLarge_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// display Medium
-class DisplayMedium__text extends StatelessWidget {
-  const DisplayMedium__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class DisplayMedium__text extends StatelessWidget {
+//   const DisplayMedium__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_DisplayMedium_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_DisplayMedium_LetterSpacing,
-      height: kConfig_DisplayMedium_LineHeight,
-      fontWeight: fontWeight ?? kConfig_DisplayMedium_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_DisplayMedium_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_DisplayMedium_LetterSpacing,
+//       height: kConfig_DisplayMedium_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_DisplayMedium_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// display Small
-class DisplaySmall__text extends StatelessWidget {
-  const DisplaySmall__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class DisplaySmall__text extends StatelessWidget {
+//   const DisplaySmall__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_DisplaySmall_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_DisplaySmall_LetterSpacing,
-      height: kConfig_DisplaySmall_LineHeight,
-      fontWeight: fontWeight ?? kConfig_DisplaySmall_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_DisplaySmall_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_DisplaySmall_LetterSpacing,
+//       height: kConfig_DisplaySmall_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_DisplaySmall_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Headline large
 /// -----------------------------------------------------------------------------------------------
-class HeadlineLarge__text extends StatelessWidget {
-  const HeadlineLarge__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class HeadlineLarge__text extends StatelessWidget {
+//   const HeadlineLarge__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_HeadlineLarge_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_HeadlineLarge_LetterSpacing,
-      height: kConfig_HeadlineLarge_LineHeight,
-      fontWeight: fontWeight ?? kConfig_HeadlineLarge_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_HeadlineLarge_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_HeadlineLarge_LetterSpacing,
+//       height: kConfig_HeadlineLarge_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_HeadlineLarge_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Headline Medium
-class HeadlineMedium__text extends StatelessWidget {
-  const HeadlineMedium__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class HeadlineMedium__text extends StatelessWidget {
+//   const HeadlineMedium__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_HeadlineMedium_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_HeadlineMedium_LetterSpacing,
-      height: kConfig_HeadlineMedium_LineHeight,
-      fontWeight: fontWeight ?? kConfig_HeadlineMedium_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_HeadlineMedium_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_HeadlineMedium_LetterSpacing,
+//       height: kConfig_HeadlineMedium_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_HeadlineMedium_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Headline Small
-class HeadlineSmall__text extends StatelessWidget {
-  const HeadlineSmall__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class HeadlineSmall__text extends StatelessWidget {
+//   const HeadlineSmall__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_HeadlineSmall_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_HeadlineSmall_LetterSpacing,
-      height: kConfig_HeadlineSmall_LineHeight,
-      fontWeight: fontWeight ?? kConfig_HeadlineSmall_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_HeadlineSmall_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_HeadlineSmall_LetterSpacing,
+//       height: kConfig_HeadlineSmall_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_HeadlineSmall_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Title large
@@ -335,68 +335,68 @@ class TitleMedium__text extends StatelessWidget {
 
 ///
 /// Title Small
-class TitleSmall__text extends StatelessWidget {
-  const TitleSmall__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class TitleSmall__text extends StatelessWidget {
+//   const TitleSmall__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_TitleSmall_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_TitleSmall_LetterSpacing,
-      height: kConfig_TitleSmall_LineHeight,
-      fontWeight: fontWeight ?? kConfig_TitleSmall_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_TitleSmall_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_TitleSmall_LetterSpacing,
+//       height: kConfig_TitleSmall_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_TitleSmall_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Label large
 /// -----------------------------------------------------------------------------------------------
-class LabelLarge__text extends StatelessWidget {
-  const LabelLarge__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class LabelLarge__text extends StatelessWidget {
+//   const LabelLarge__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_LabelLarge_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_LabelLarge_LetterSpacing,
-      height: kConfig_LabelLarge_LineHeight,
-      fontWeight: fontWeight ?? kConfig_LabelLarge_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_LabelLarge_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_LabelLarge_LetterSpacing,
+//       height: kConfig_LabelLarge_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_LabelLarge_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Label Medium
@@ -465,35 +465,35 @@ class LabelSmall__text extends StatelessWidget {
 ///
 /// Body large
 /// -----------------------------------------------------------------------------------------------
-class BodyLarge__text extends StatelessWidget {
-  const BodyLarge__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class BodyLarge__text extends StatelessWidget {
+//   const BodyLarge__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_LabelLarge_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_BodyLarge_LetterSpacing,
-      height: kConfig_BodyLarge_LineHeight,
-      fontWeight: fontWeight ?? kConfig_BodyLarge_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_LabelLarge_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_BodyLarge_LetterSpacing,
+//       height: kConfig_BodyLarge_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_BodyLarge_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Body Medium
@@ -562,98 +562,98 @@ class BodySmall__text extends StatelessWidget {
 ///
 /// Button
 /// -----------------------------------------------------------------------------------------------
-class Button__text extends StatelessWidget {
-  const Button__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class Button__text extends StatelessWidget {
+//   const Button__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text.toString().toUpperCase(),
-      fontSize: size ?? kConfig_Button_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_Button_LetterSpacing,
-      height: kConfig_Button_LineHeight,
-      fontWeight: fontWeight ?? kConfig_Button_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text.toString().toUpperCase(),
+//       fontSize: size ?? kConfig_Button_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_Button_LetterSpacing,
+//       height: kConfig_Button_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_Button_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Caption
 /// -----------------------------------------------------------------------------------------------
-class Caption__text extends StatelessWidget {
-  const Caption__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class Caption__text extends StatelessWidget {
+//   const Caption__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text,
-      fontSize: size ?? kConfig_Caption_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_Caption_LetterSpacing,
-      height: kConfig_Caption_LineHeight,
-      fontWeight: fontWeight ?? kConfig_Caption_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text,
+//       fontSize: size ?? kConfig_Caption_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_Caption_LetterSpacing,
+//       height: kConfig_Caption_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_Caption_FontWeight,
+//     );
+//   }
+// }
 
 ///
 /// Overline
 /// -----------------------------------------------------------------------------------------------
-class Overline__text extends StatelessWidget {
-  const Overline__text({
-    Key? key,
-    required this.text,
-    this.size,
-    this.color,
-    this.fontWeight,
-    this.lineHeight,
-    this.letterSpacing,
-  }) : super(key: key);
+// class Overline__text extends StatelessWidget {
+//   const Overline__text({
+//     Key? key,
+//     required this.text,
+//     this.size,
+//     this.color,
+//     this.fontWeight,
+//     this.lineHeight,
+//     this.letterSpacing,
+//   }) : super(key: key);
 
-  final text;
-  final size;
-  final color;
-  final fontWeight;
-  final lineHeight;
-  final letterSpacing;
+//   final text;
+//   final size;
+//   final color;
+//   final fontWeight;
+//   final lineHeight;
+//   final letterSpacing;
 
-  @override
-  Widget build(BuildContext context) {
-    return Text__widget(
-      text: text.toString().toUpperCase(),
-      fontSize: size ?? kConfig_Overline_FontSize,
-      letterSpacing: letterSpacing ?? kConfig_Overline_LetterSpacing,
-      height: kConfig_Overline_LineHeight,
-      fontWeight: fontWeight ?? kConfig_Overline_FontWeight,
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Text__widget(
+//       text: text.toString().toUpperCase(),
+//       fontSize: size ?? kConfig_Overline_FontSize,
+//       letterSpacing: letterSpacing ?? kConfig_Overline_LetterSpacing,
+//       height: kConfig_Overline_LineHeight,
+//       fontWeight: fontWeight ?? kConfig_Overline_FontWeight,
+//     );
+//   }
+// }
