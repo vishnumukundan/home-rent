@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors, prefer_typing_uninitialized_variables, camel_case_types
+
 import 'package:flutter/material.dart';
 
 import '../themes/text_config.dart';

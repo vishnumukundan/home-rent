@@ -2,6 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 
+const double kDefaultIconSize = 24.0;
+
 ///
 /// spacing values
 const double kBasePadding = 16;

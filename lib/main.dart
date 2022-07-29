@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:home_rent/presentation/pages/home/view/home.dart';
-import 'package:home_rent/presentation/themes/colors.dart';
 
 void main() {
   runApp(const MyApp());

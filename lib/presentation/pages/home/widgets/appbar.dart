@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -5,6 +7,7 @@ import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../../themes/colors.dart';
 import '../../../themes/values.dart';
+import 'icon_with_badge.dart';
 
 PreferredSize appbar__widget() {
   return PreferredSize(
@@ -39,7 +42,10 @@ PreferredSize appbar__widget() {
                 ],
               ),
               const Spacer(),
-              Assets.icons.notification.svg(height: 24, width: 24),
+              IconWithBadge__widget(
+                badgeVisibility: true,
+                iconAsset: Assets.icons.notification.svg,
+              ),
             ],
           ),
         )),
