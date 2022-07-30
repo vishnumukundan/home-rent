@@ -1,11 +1,17 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:home_rent/presentation/components/text.dart';
 import 'package:home_rent/presentation/pages/home/widgets/appbar.dart';
+import 'package:home_rent/presentation/pages/home/widgets/button_group.dart';
+import 'package:home_rent/presentation/pages/home/widgets/cardHorizontalList.dart';
+import 'package:home_rent/presentation/pages/home/widgets/list_card.dart';
 import 'package:home_rent/presentation/pages/home/widgets/search_and_filter.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
 import 'package:home_rent/presentation/themes/screen_size_config.dart';
 import 'package:home_rent/presentation/themes/values.dart';
+
+import '../widgets/title_bar.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({Key? key}) : super(key: key);
@@ -18,11 +24,16 @@ class ScreenHome extends StatelessWidget {
       appBar: appbar__widget(),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Column(
-            children: const [
-              kSizedBoxHeight_8,
+            children: [
               SearchAndFilter(),
+              ButtonGroup__widget(),
+              kSizedBoxHeight_8,
+              TitleBar__widget(title: 'Near from you', ontap: () {}),
+              CardHorizontalList__widget(),
+              kSizedBoxHeight_8,
+              TitleBar__widget(title: 'Best for you', ontap: () {}),
+              ListCard__widget(),
             ],
           ),
         ),

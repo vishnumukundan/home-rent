@@ -89,29 +89,23 @@ class $AssetsImagesGen {
   AssetGenImage get additional4 =>
       const AssetGenImage('assets/images/additional4.jpg');
 
-  /// File path: assets/images/house_image1.jpg
-  AssetGenImage get houseImage1 =>
-      const AssetGenImage('assets/images/house_image1.jpg');
+  /// File path: assets/images/house1.jpg
+  AssetGenImage get house1 => const AssetGenImage('assets/images/house1.jpg');
 
-  /// File path: assets/images/house_image2.jpg
-  AssetGenImage get houseImage2 =>
-      const AssetGenImage('assets/images/house_image2.jpg');
+  /// File path: assets/images/house2.jpg
+  AssetGenImage get house2 => const AssetGenImage('assets/images/house2.jpg');
 
-  /// File path: assets/images/house_image3.jpg
-  AssetGenImage get houseImage3 =>
-      const AssetGenImage('assets/images/house_image3.jpg');
+  /// File path: assets/images/house3.jpg
+  AssetGenImage get house3 => const AssetGenImage('assets/images/house3.jpg');
 
-  /// File path: assets/images/house_image4.jpg
-  AssetGenImage get houseImage4 =>
-      const AssetGenImage('assets/images/house_image4.jpg');
+  /// File path: assets/images/house4.jpg
+  AssetGenImage get house4 => const AssetGenImage('assets/images/house4.jpg');
 
-  /// File path: assets/images/house_image5.jpg
-  AssetGenImage get houseImage5 =>
-      const AssetGenImage('assets/images/house_image5.jpg');
+  /// File path: assets/images/house5.jpg
+  AssetGenImage get house5 => const AssetGenImage('assets/images/house5.jpg');
 
-  /// File path: assets/images/house_image6.jpg
-  AssetGenImage get houseImage6 =>
-      const AssetGenImage('assets/images/house_image6.jpg');
+  /// File path: assets/images/house6.jpg
+  AssetGenImage get house6 => const AssetGenImage('assets/images/house6.jpg');
 }
 
 class Assets {
