@@ -1,11 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:home_rent/presentation/components/text.dart';
 import 'package:home_rent/presentation/pages/home/widgets/appbar.dart';
 import 'package:home_rent/presentation/pages/home/widgets/button_group.dart';
-import 'package:home_rent/presentation/pages/home/widgets/cardHorizontalList.dart';
-import 'package:home_rent/presentation/pages/home/widgets/list_card.dart';
+import 'package:home_rent/presentation/pages/home/widgets/card_Horizontal_List.dart';
+import 'package:home_rent/presentation/pages/home/widgets/card_vertical_list.dart';
 import 'package:home_rent/presentation/pages/home/widgets/search_and_filter.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
 import 'package:home_rent/presentation/themes/screen_size_config.dart';
@@ -33,7 +32,8 @@ class ScreenHome extends StatelessWidget {
               CardHorizontalList__widget(),
               kSizedBoxHeight_8,
               TitleBar__widget(title: 'Best for you', ontap: () {}),
-              ListCard__widget(),
+              CaerdVerticalList__widget(),
+              kSizedBoxHeight_16,
             ],
           ),
         ),

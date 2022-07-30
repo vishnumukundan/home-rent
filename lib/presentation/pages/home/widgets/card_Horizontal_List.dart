@@ -16,6 +16,7 @@ class CardHorizontalList__widget extends StatelessWidget {
         child: Row(
           children: [
             CardListItem(
+              ontap: () {},
               distance: '1.8 km',
               title: 'Dreamsville House',
               description: 'Jl. Sultan Iskandar Muda',
@@ -23,6 +24,7 @@ class CardHorizontalList__widget extends StatelessWidget {
             ),
             kSizedBoxWidth_16,
             CardListItem(
+              ontap: () {},
               distance: '3.0 km',
               title: 'Ascot House',
               description: 'Jl. Cilandak Tengah',
@@ -71,61 +73,67 @@ class CardListItem extends StatelessWidget {
     required this.title,
     required this.description,
     required this.image,
+    required this.ontap,
   }) : super(key: key);
 
   final String distance;
   final String title;
   final String description;
   final image;
+  final ontap;
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          width: 200,
-          height: 250,
-          decoration: BoxDecoration(
-            color: kColorText3,
-            image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
-        Container(
-          width: 200,
-          height: 250,
-          decoration: BoxDecoration(
+    return GestureDetector(
+      onTap: ontap,
+      child: Stack(
+        children: [
+          Container(
+            width: 200,
+            height: 250,
+            decoration: BoxDecoration(
+              color: kColorText3,
+              image:
+                  DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
               borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter,
-                stops: [0.2, 1.0],
-                colors: [
-                  kColorBlack.withOpacity(0.7),
-                  kColorWhite.withOpacity(0.0),
-                ],
-              )),
-        ),
-        Positioned(
-          right: 16,
-          top: 16,
-          child: DistanceChips(
-            text: distance,
+            ),
           ),
-        ),
-        Positioned(
-          left: 20,
-          bottom: 16,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              LabelSmall__text(text: title, color: kColorWhite),
-              kSizedBoxHeight_8,
-              BodySmall__text(text: description, color: kColorText3),
-            ],
+          Container(
+            width: 200,
+            height: 250,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  stops: [0.2, 1.0],
+                  colors: [
+                    kColorBlack.withOpacity(0.7),
+                    kColorWhite.withOpacity(0.0),
+                  ],
+                )),
           ),
-        )
-      ],
+          Positioned(
+            right: 16,
+            top: 16,
+            child: DistanceChips(
+              text: distance,
+            ),
+          ),
+          Positioned(
+            left: 20,
+            bottom: 16,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                LabelSmall__text(text: title, color: kColorWhite),
+                kSizedBoxHeight_8,
+                BodySmall__text(text: description, color: kColorText3),
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
