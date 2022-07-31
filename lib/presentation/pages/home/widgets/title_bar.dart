@@ -8,10 +8,12 @@ class TitleBar__widget extends StatelessWidget {
     Key? key,
     required this.title,
     required this.ontap,
+    this.visibility = true,
   }) : super(key: key);
 
   final String title;
   final ontap;
+  final bool visibility;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,10 @@ class TitleBar__widget extends StatelessWidget {
           const Spacer(),
           GestureDetector(
             onTap: ontap,
-            child: const BodySmall__text(text: 'See more', color: kColorText2),
+            child: Visibility(
+                visible: visibility,
+                child: const BodySmall__text(
+                    text: 'See more', color: kColorText2)),
           ),
         ],
       ),

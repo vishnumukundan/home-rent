@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:home_rent/core/utils/navigator.dart';
 import 'package:home_rent/gen/assets.gen.dart';
 import 'package:home_rent/presentation/components/text.dart';
+import 'package:home_rent/presentation/pages/details_page/view/details.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
 import 'package:home_rent/presentation/themes/values.dart';
 
@@ -16,7 +18,7 @@ class CardHorizontalList__widget extends StatelessWidget {
         child: Row(
           children: [
             CardListItem(
-              ontap: () {},
+              ontap: () => PageNav().push(context, const ScreenDetails()),
               distance: '1.8 km',
               title: 'Dreamsville House',
               description: 'Jl. Sultan Iskandar Muda',

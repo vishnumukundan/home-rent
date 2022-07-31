@@ -1,5 +1,3 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_typing_uninitialized_variables, camel_case_types
-
 import 'package:flutter/material.dart';
 
 import '../themes/text_config.dart';
@@ -16,21 +14,8 @@ class Text__widget extends StatelessWidget {
     required this.fontWeight,
     this.fontFamily,
     this.color,
-    // this.wordSpacing,
-    // this.backgroundColor,
-    // this.textBaseline,
-    // this.fontStyle,
-    // this.leadingDistribution,
-    // this.locale,
-    // this.foreground,
-    // this.background,
-    // this.shadows,
-    // this.fontFeatures,
-    // this.decoration,
-    // this.decorationColor,
-    // this.decorationStyle,
-    // this.decorationThickness,
-    // this.debugLabel,
+    required this.textAlign,
+    required this.textOverFlow,
   });
 
   final text;
@@ -40,26 +25,15 @@ class Text__widget extends StatelessWidget {
   final fontSize;
   final letterSpacing;
   final height;
-  // final wordSpacing;
-  // final backgroundColor;
-  // final fontStyle;
-  // final textBaseline;
-  // final leadingDistribution;
-  // final locale;
-  // final foreground;
-  // final background;
-  // final shadows;
-  // final fontFeatures;
-  // final decoration;
-  // final decorationColor;
-  // final decorationStyle;
-  // final decorationThickness;
-  // final debugLabel;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
+      overflow: textOverFlow,
+      textAlign: textAlign ?? TextAlign.left,
       style: TextStyle(
         fontFamily: fontFamily ?? kFontFamily,
         fontWeight: fontWeight ?? kDefaultFontWeight,
@@ -88,6 +62,8 @@ class Text__widget extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -96,12 +72,16 @@ class Text__widget extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_DisplayLarge_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_DisplayLarge_LetterSpacing,
 //       height: kConfig_DisplayLarge_LineHeight,
@@ -110,8 +90,8 @@ class Text__widget extends StatelessWidget {
 //   }
 // }
 
-///
-/// display Medium
+// ///
+// /// display Medium
 // class DisplayMedium__text extends StatelessWidget {
 //   const DisplayMedium__text({
 //     Key? key,
@@ -121,6 +101,8 @@ class Text__widget extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -129,12 +111,16 @@ class Text__widget extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_DisplayMedium_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_DisplayMedium_LetterSpacing,
 //       height: kConfig_DisplayMedium_LineHeight,
@@ -143,8 +129,8 @@ class Text__widget extends StatelessWidget {
 //   }
 // }
 
-///
-/// display Small
+// ///
+// /// display Small
 // class DisplaySmall__text extends StatelessWidget {
 //   const DisplaySmall__text({
 //     Key? key,
@@ -154,6 +140,8 @@ class Text__widget extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -162,12 +150,16 @@ class Text__widget extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_DisplaySmall_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_DisplaySmall_LetterSpacing,
 //       height: kConfig_DisplaySmall_LineHeight,
@@ -176,9 +168,9 @@ class Text__widget extends StatelessWidget {
 //   }
 // }
 
-///
-/// Headline large
-/// -----------------------------------------------------------------------------------------------
+// ///
+// /// Headline large
+// /// -----------------------------------------------------------------------------------------------
 // class HeadlineLarge__text extends StatelessWidget {
 //   const HeadlineLarge__text({
 //     Key? key,
@@ -188,6 +180,8 @@ class Text__widget extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -196,12 +190,16 @@ class Text__widget extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_HeadlineLarge_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_HeadlineLarge_LetterSpacing,
 //       height: kConfig_HeadlineLarge_LineHeight,
@@ -210,8 +208,8 @@ class Text__widget extends StatelessWidget {
 //   }
 // }
 
-///
-/// Headline Medium
+// ///
+// /// Headline Medium
 // class HeadlineMedium__text extends StatelessWidget {
 //   const HeadlineMedium__text({
 //     Key? key,
@@ -221,6 +219,8 @@ class Text__widget extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -229,12 +229,16 @@ class Text__widget extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_HeadlineMedium_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_HeadlineMedium_LetterSpacing,
 //       height: kConfig_HeadlineMedium_LineHeight,
@@ -243,8 +247,8 @@ class Text__widget extends StatelessWidget {
 //   }
 // }
 
-///
-/// Headline Small
+// ///
+// /// Headline Small
 // class HeadlineSmall__text extends StatelessWidget {
 //   const HeadlineSmall__text({
 //     Key? key,
@@ -254,6 +258,8 @@ class Text__widget extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -262,12 +268,16 @@ class Text__widget extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_HeadlineSmall_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_HeadlineSmall_LetterSpacing,
 //       height: kConfig_HeadlineSmall_LineHeight,
@@ -288,6 +298,8 @@ class TitleLarge__text extends StatelessWidget {
     this.fontWeight,
     this.lineHeight,
     this.letterSpacing,
+    this.textAlign,
+    this.textOverFlow,
   }) : super(key: key);
 
   final text;
@@ -296,12 +308,16 @@ class TitleLarge__text extends StatelessWidget {
   final fontWeight;
   final lineHeight;
   final letterSpacing;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
-      color: color ?? kDefaultTextColor,
+      textAlign: textAlign,
+      textOverFlow: textOverFlow,
+      color: color,
       fontSize: size ?? kConfig_TitleLarge_FontSize,
       letterSpacing: letterSpacing ?? kConfig_TitleLarge_LetterSpacing,
       height: kConfig_TitleLarge_LineHeight,
@@ -321,6 +337,8 @@ class TitleMedium__text extends StatelessWidget {
     this.fontWeight,
     this.lineHeight,
     this.letterSpacing,
+    this.textAlign,
+    this.textOverFlow,
   }) : super(key: key);
 
   final text;
@@ -329,12 +347,16 @@ class TitleMedium__text extends StatelessWidget {
   final fontWeight;
   final lineHeight;
   final letterSpacing;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
-      color: color ?? kDefaultTextColor,
+      textAlign: textAlign,
+      textOverFlow: textOverFlow,
+      color: color,
       fontSize: size ?? kConfig_TitleMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_TitleMedium_LetterSpacing,
       height: kConfig_TitleMedium_LineHeight,
@@ -354,6 +376,8 @@ class TitleMedium__text extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -362,12 +386,16 @@ class TitleMedium__text extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_TitleSmall_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_TitleSmall_LetterSpacing,
 //       height: kConfig_TitleSmall_LineHeight,
@@ -376,9 +404,9 @@ class TitleMedium__text extends StatelessWidget {
 //   }
 // }
 
-///
-/// Label large
-/// -----------------------------------------------------------------------------------------------
+// ///
+// /// Label large
+// /// -----------------------------------------------------------------------------------------------
 // class LabelLarge__text extends StatelessWidget {
 //   const LabelLarge__text({
 //     Key? key,
@@ -388,6 +416,8 @@ class TitleMedium__text extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -396,12 +426,16 @@ class TitleMedium__text extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_LabelLarge_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_LabelLarge_LetterSpacing,
 //       height: kConfig_LabelLarge_LineHeight,
@@ -421,6 +455,8 @@ class LabelMedium__text extends StatelessWidget {
     this.fontWeight,
     this.lineHeight,
     this.letterSpacing,
+    this.textAlign,
+    this.textOverFlow,
   }) : super(key: key);
 
   final text;
@@ -429,12 +465,16 @@ class LabelMedium__text extends StatelessWidget {
   final fontWeight;
   final lineHeight;
   final letterSpacing;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
-      color: color ?? kDefaultTextColor,
+      textAlign: textAlign,
+      textOverFlow: textOverFlow,
+      color: color,
       fontSize: size ?? kConfig_LabelMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_LabelMedium_LetterSpacing,
       height: kConfig_LabelMedium_LineHeight,
@@ -454,6 +494,8 @@ class LabelSmall__text extends StatelessWidget {
     this.fontWeight,
     this.lineHeight,
     this.letterSpacing,
+    this.textAlign,
+    this.textOverFlow,
   }) : super(key: key);
 
   final text;
@@ -462,12 +504,16 @@ class LabelSmall__text extends StatelessWidget {
   final fontWeight;
   final lineHeight;
   final letterSpacing;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
-      color: color ?? kDefaultTextColor,
+      textAlign: textAlign,
+      textOverFlow: textOverFlow,
+      color: color,
       fontSize: size ?? kConfig_LabelSmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_LabelSmall_LetterSpacing,
       height: kConfig_LabelSmall_LineHeight,
@@ -488,6 +534,8 @@ class LabelSmall__text extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -496,12 +544,16 @@ class LabelSmall__text extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_BodyLarge_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_BodyLarge_LetterSpacing,
 //       height: kConfig_BodyLarge_LineHeight,
@@ -521,6 +573,8 @@ class BodyMedium__text extends StatelessWidget {
     this.fontWeight,
     this.lineHeight,
     this.letterSpacing,
+    this.textAlign,
+    this.textOverFlow,
   }) : super(key: key);
 
   final text;
@@ -529,12 +583,16 @@ class BodyMedium__text extends StatelessWidget {
   final fontWeight;
   final lineHeight;
   final letterSpacing;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
-      color: color ?? kDefaultTextColor,
+      textAlign: textAlign,
+      textOverFlow: textOverFlow,
+      color: color,
       fontSize: size ?? kConfig_BodyMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_BodyMedium_LetterSpacing,
       height: kConfig_BodyMedium_LineHeight,
@@ -554,6 +612,8 @@ class BodySmall__text extends StatelessWidget {
     this.fontWeight,
     this.lineHeight,
     this.letterSpacing,
+    this.textAlign,
+    this.textOverFlow,
   }) : super(key: key);
 
   final text;
@@ -562,12 +622,16 @@ class BodySmall__text extends StatelessWidget {
   final fontWeight;
   final lineHeight;
   final letterSpacing;
+  final textAlign;
+  final textOverFlow;
 
   @override
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
-      color: color ?? kDefaultTextColor,
+      textAlign: textAlign,
+      textOverFlow: textOverFlow,
+      color: color,
       fontSize: size ?? kConfig_BodySmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_BodySmall_LetterSpacing,
       height: kConfig_BodySmall_LineHeight,
@@ -588,6 +652,8 @@ class BodySmall__text extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -596,11 +662,16 @@ class BodySmall__text extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text.toString().toUpperCase(),
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_Button_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_Button_LetterSpacing,
 //       height: kConfig_Button_LineHeight,
@@ -609,9 +680,9 @@ class BodySmall__text extends StatelessWidget {
 //   }
 // }
 
-///
-/// Caption
-/// -----------------------------------------------------------------------------------------------
+// ///
+// /// Caption
+// /// -----------------------------------------------------------------------------------------------
 // class Caption__text extends StatelessWidget {
 //   const Caption__text({
 //     Key? key,
@@ -621,6 +692,8 @@ class BodySmall__text extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -629,12 +702,16 @@ class BodySmall__text extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text,
-// color: color ?? kDefaultTextColor,
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_Caption_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_Caption_LetterSpacing,
 //       height: kConfig_Caption_LineHeight,
@@ -643,9 +720,9 @@ class BodySmall__text extends StatelessWidget {
 //   }
 // }
 
-///
-/// Overline
-/// -----------------------------------------------------------------------------------------------
+// ///
+// /// Overline
+// /// -----------------------------------------------------------------------------------------------
 // class Overline__text extends StatelessWidget {
 //   const Overline__text({
 //     Key? key,
@@ -655,6 +732,8 @@ class BodySmall__text extends StatelessWidget {
 //     this.fontWeight,
 //     this.lineHeight,
 //     this.letterSpacing,
+//     this.textAlign,
+//     this.textOverFlow,
 //   }) : super(key: key);
 
 //   final text;
@@ -663,11 +742,16 @@ class BodySmall__text extends StatelessWidget {
 //   final fontWeight;
 //   final lineHeight;
 //   final letterSpacing;
+//   final textAlign;
+//   final textOverFlow;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Text__widget(
 //       text: text.toString().toUpperCase(),
+//       textAlign: textAlign,
+//       textOverFlow: textOverFlow,
+//       color: color,
 //       fontSize: size ?? kConfig_Overline_FontSize,
 //       letterSpacing: letterSpacing ?? kConfig_Overline_LetterSpacing,
 //       height: kConfig_Overline_LineHeight,
