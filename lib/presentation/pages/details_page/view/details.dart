@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:home_rent/presentation/components/text.dart';
 import 'package:home_rent/presentation/pages/details_page/widgets/header_image.dart';
+import 'package:home_rent/presentation/pages/details_page/widgets/image_gallery.dart';
 import 'package:home_rent/presentation/pages/details_page/widgets/user_profile.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
 import 'package:home_rent/presentation/themes/config.dart';
@@ -10,6 +11,7 @@ class ScreenDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenConfig().init(context);
     return Scaffold(
       backgroundColor: kColorScaffold,
       body: SafeArea(
@@ -43,6 +45,7 @@ class ScreenDetails extends StatelessWidget {
               kSizedBoxHeight_24,
               const LabelSmall__text(text: 'Gallery'),
               kSizedBoxHeight_16,
+              const ImageGallery__widget(),
             ],
           ),
         ),
