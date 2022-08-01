@@ -81,10 +81,10 @@ This is a small user interface design project for home rental application. This 
 ## :camera: Screenshots
 
 <div style="display:grid">
-    <img style="width: 240px" src="screenshots/home1.png" alt="home1" title="home1">
-    <img style="width: 240px" src="screenshots/home2.png" alt="home2" title="home2">
-    <img style="width: 240px" src="screenshots/detail1.png" alt="detail1" title="detail1">
-    <img style="width: 240px" src="screenshots/detail2.png" alt="detail2" title="detail2">
+    <img style="width: 235px" src="screenshots/home1.png" alt="home1" title="home1">
+    <img style="width: 235px" src="screenshots/home2.png" alt="home2" title="home2">
+    <img style="width: 235px" src="screenshots/detail1.png" alt="detail1" title="detail1">
+    <img style="width: 235px" src="screenshots/detail2.png" alt="detail2" title="detail2">
 </div>
 
 <p align="right"><a href="#top"> :arrow_up_small: </a></p>
