@@ -4,7 +4,7 @@ import 'package:home_rent/gen/assets.gen.dart';
 import 'package:home_rent/presentation/components/text.dart';
 import 'package:home_rent/presentation/pages/details_page/view/details.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
-import 'package:home_rent/presentation/themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 class CardHorizontalList__widget extends StatelessWidget {
   const CardHorizontalList__widget({Key? key}) : super(key: key);

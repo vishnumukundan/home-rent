@@ -89,6 +89,9 @@ class $AssetsImagesGen {
   AssetGenImage get additional4 =>
       const AssetGenImage('assets/images/additional4.jpg');
 
+  /// File path: assets/images/avatar.png
+  AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
+
   /// File path: assets/images/house1.jpg
   AssetGenImage get house1 => const AssetGenImage('assets/images/house1.jpg');
 

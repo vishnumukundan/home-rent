@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
+import '../colors.dart';
 
 const kFontFamily = 'Raleway';
 
@@ -129,3 +129,12 @@ const double kConfig_BodySmall_LineHeight = 1.4;
 // const double kConfig_Caption_LineHeight = kDefaultLineHeight;
 
 // const double kConfig_Overline_LineHeight = kDefaultLetterSpacing;
+
+const kBodySmallTextstyle = TextStyle(
+  fontFamily: kFontFamily,
+  color: kColorText2,
+  fontSize: kConfig_BodySmall_FontSize,
+  letterSpacing: kConfig_BodySmall_LetterSpacing,
+  height: kConfig_BodySmall_LineHeight,
+  fontWeight: kConfig_BodySmall_FontWeight,
+);

@@ -4,7 +4,7 @@ import 'package:home_rent/core/utils/navigator.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../../themes/colors.dart';
-import '../../../themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 const double _stackPadding = 20.0;
 

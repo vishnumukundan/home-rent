@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:home_rent/presentation/components/button.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
-import 'package:home_rent/presentation/themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 class ButtonGroup__widget extends StatelessWidget {
   const ButtonGroup__widget({Key? key}) : super(key: key);

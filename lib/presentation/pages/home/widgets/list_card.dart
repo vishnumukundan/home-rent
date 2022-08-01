@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:home_rent/gen/assets.gen.dart';
 import 'package:home_rent/presentation/components/text.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
-import 'package:home_rent/presentation/themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 class ListCardItem__widget extends StatelessWidget {
   const ListCardItem__widget(

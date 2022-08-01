@@ -7,8 +7,7 @@ import 'package:home_rent/presentation/pages/home/widgets/card_Horizontal_List.d
 import 'package:home_rent/presentation/pages/home/widgets/card_vertical_list.dart';
 import 'package:home_rent/presentation/pages/home/widgets/search_and_filter.dart';
 import 'package:home_rent/presentation/themes/colors.dart';
-import 'package:home_rent/presentation/themes/screen_size_config.dart';
-import 'package:home_rent/presentation/themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 import '../widgets/title_bar.dart';
 

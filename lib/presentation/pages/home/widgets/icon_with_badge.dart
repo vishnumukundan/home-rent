@@ -1,7 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:home_rent/presentation/themes/values.dart';
+import 'package:home_rent/presentation/themes/config_files/values.dart';
 
 import 'badge.dart';
 

@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_typing_uninitialized_variables, camel_case_types
 
 import 'package:flutter/material.dart';
-
-import '../themes/button_config.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 ////////////////////////////////////////////////////////
 //////  Base Button Design

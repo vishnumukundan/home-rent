@@ -6,7 +6,8 @@ import 'package:flutter/services.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../../themes/colors.dart';
-import '../../../themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
+
 import 'icon_with_badge.dart';
 
 PreferredSize appbar__widget() {

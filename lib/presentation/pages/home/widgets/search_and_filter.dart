@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../gen/assets.gen.dart';
 import '../../../themes/colors.dart';
-import '../../../themes/screen_size_config.dart';
-import '../../../themes/values.dart';
+import 'package:home_rent/presentation/themes/config.dart';
 
 class SearchAndFilter extends StatelessWidget {
   const SearchAndFilter({

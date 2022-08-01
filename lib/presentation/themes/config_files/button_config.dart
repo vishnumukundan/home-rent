@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:home_rent/presentation/themes/text_config.dart';
+import 'package:home_rent/presentation/themes/config_files/text_config.dart';
 
-import 'colors.dart';
+import '../colors.dart';
 
 ///////////////////////////////////////////////////////////////////////
 ///  Custom Button Style
